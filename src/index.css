@@ -2,7 +2,7 @@
 @plugin "daisyui";
 
 @theme{
-  --color-primary: #001931;
+  --color-primary: #01305a;
   --color-secondary: #627382;
   --color-success: #00D390;
   --color-warning: #FF8811;
@@ -13,6 +13,6 @@
   --color-success: #0bdf74;
   --color-info: #47bcff;
   --color-secondary-content: #fff0e1;
-  --background-image-hero-linear1: linear-Gradient(to right, #00bffc, #007363);
-  --background-image-hero-linear2: linear-Gradient(to right, #632EE3, #9f62f2);
+  --background-image-hero-linear1: linear-gradient(to right, #00bffc, #007363);
+  --background-image-hero-linear2: linear-gradient(to right, #632EE3, #9f62f2);
 }
