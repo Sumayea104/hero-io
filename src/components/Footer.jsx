@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 import { FaFacebook, FaGithub, FaTwitter, FaLinkedin, FaEnvelope, FaPhoneAlt, FaArrowRight } from "react-icons/fa";
 
 const Footer = () => {
@@ -9,8 +10,11 @@ const Footer = () => {
           
           {/* 1. Brand & Identity */}
           <div className="space-y-6">
-            <Link to="/" className="text-4xl font-black italic tracking-tighter">
-              HERO<span className="text-primary">.IO</span>
+            <Link to="/" className="flex items-center gap-3">
+              <img src={logo} alt="Hero.io" className="h-10 w-10" />
+              <span className="text-3xl font-black italic tracking-tighter">
+                HERO<span className="text-primary">.IO</span>
+              </span>
             </Link>
             <p className="text-sm font-medium opacity-60 leading-relaxed max-w-xs">
               The ultimate destination for discovering high-performance applications. Built for developers, designed for everyone.
