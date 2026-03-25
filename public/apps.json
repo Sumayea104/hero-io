@@ -1,362 +1,362 @@
 [
   {
-    "id": 1,
-    "title": "ZenFlow",
-    "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=400&h=400&fit=crop",
-    "companyName": "Mindful Tech",
-    "description": "A minimalist meditation and productivity app designed to help you focus and reduce stress through guided sessions.",
-    "size": 45,
-    "reviews": 12500,
-    "ratingAvg": 4.8,
-    "downloads": 500000,
-    "ratings": [
-      { "name": "1 star", "count": 200 },
-      { "name": "2 star", "count": 300 },
-      { "name": "3 star", "count": 1000 },
-      { "name": "4 star", "count": 3500 },
-      { "name": "5 star", "count": 7500 }
-    ]
-  },
-  {
     "id": 2,
-    "title": "PixelEditor Pro",
-    "image": "https://images.unsplash.com/photo-1551288049-bbbda536ad37?q=80&w=400&h=400&fit=crop",
-    "companyName": "Creative Suite Inc.",
-    "description": "Powerful mobile photo editing with AI-driven filters, RAW support, and professional color grading tools.",
-    "size": 120,
-    "reviews": 8900,
-    "ratingAvg": 4.5,
-    "downloads": 1000000,
+    "title": "FitTrack Pro",
+    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=400&h=400&fit=crop",
+    "companyName": "Health Metrics Lab",
+    "description": "Comprehensive workout tracker with personalized AI coaching and real-time heart rate monitoring.",
+    "size": 82,
+    "reviews": 45200,
+    "ratingAvg": 4.7,
+    "downloads": "10M",
     "ratings": [
-      { "name": "1 star", "count": 400 },
-      { "name": "2 star", "count": 500 },
-      { "name": "3 star", "count": 1200 },
-      { "name": "4 star", "count": 2800 },
-      { "name": "5 star", "count": 4000 }
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 4200 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 27000 }
     ]
   },
   {
     "id": 3,
-    "title": "CryptaWallet",
+    "title": "CryptoVault",
     "image": "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=400&h=400&fit=crop",
-    "companyName": "SecureChain Labs",
-    "description": "A secure and decentralized wallet for managing your digital assets, NFTs, and multi-chain transactions.",
+    "companyName": "SecureChain Inc.",
+    "description": "A secure and intuitive cryptocurrency wallet supporting over 500+ digital assets with cold storage options.",
     "size": 35,
-    "reviews": 5400,
-    "ratingAvg": 4.2,
-    "downloads": 250000,
+    "reviews": 8900,
+    "ratingAvg": 4.5,
+    "downloads": "1M",
     "ratings": [
-      { "name": "1 star", "count": 300 },
-      { "name": "2 star", "count": 600 },
-      { "name": "3 star", "count": 1500 },
-      { "name": "4 star", "count": 1000 },
-      { "name": "5 star", "count": 2000 }
-    ]
-  },
-  {
-    "id": 4,
-    "title": "FitTracker AI",
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=400&h=400&fit=crop",
-    "companyName": "HealthX Corp",
-    "description": "Track your workouts automatically using computer vision and get personalized meal plans based on your goals.",
-    "size": 65,
-    "reviews": 15600,
-    "ratingAvg": 4.7,
-    "downloads": 750000,
-    "ratings": [
-      { "name": "1 star", "count": 100 },
-      { "name": "2 star", "count": 400 },
-      { "name": "3 star", "count": 2000 },
-      { "name": "4 star", "count": 4500 },
-      { "name": "5 star", "count": 8600 }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "SwiftCam",
-    "image": "https://images.unsplash.com/photo-1526045612212-70caf35c11bc?q=80&w=400&h=400&fit=crop",
-    "companyName": "LensSoft",
-    "description": "A lightning-fast camera app optimized for low-light photography and 4K video recording with manual controls.",
-    "size": 28,
-    "reviews": 3200,
-    "ratingAvg": 3.9,
-    "downloads": 100000,
-    "ratings": [
-      { "name": "1 star", "count": 500 },
-      { "name": "2 star", "count": 400 },
-      { "name": "3 star", "count": 800 },
-      { "name": "4 star", "count": 700 },
-      { "name": "5 star", "count": 800 }
-    ]
-  },
-  {
-    "id": 6,
-    "title": "CodeMaster",
-    "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=400&h=400&fit=crop",
-    "companyName": "DevAcademy",
-    "description": "Learn coding on the go with interactive lessons in JavaScript, Python, and React directly from your mobile.",
-    "size": 55,
-    "reviews": 21000,
-    "ratingAvg": 4.9,
-    "downloads": 1200000,
-    "ratings": [
-      { "name": "1 star", "count": 50 },
-      { "name": "2 star", "count": 150 },
-      { "name": "3 star", "count": 1300 },
-      { "name": "4 star", "count": 4500 },
-      { "name": "5 star", "count": 15000 }
-    ]
-  },
-  {
-    "id": 7,
-    "title": "EcoCart",
-    "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=400&h=400&fit=crop",
-    "companyName": "GreenWorld",
-    "description": "Shop sustainably by scanning products to see their environmental impact and carbon footprint.",
-    "size": 22,
-    "reviews": 1800,
-    "ratingAvg": 4.1,
-    "downloads": 50000,
-    "ratings": [
-      { "name": "1 star", "count": 100 },
-      { "name": "2 star", "count": 200 },
-      { "name": "3 star", "count": 400 },
-      { "name": "4 star", "count": 500 },
-      { "name": "5 star", "count": 600 }
-    ]
-  },
-  {
-    "id": 8,
-    "title": "StreamPulse",
-    "image": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=400&h=400&fit=crop",
-    "companyName": "Vibe Media",
-    "description": "The ultimate music streaming service with high-fidelity audio and personalized playlists based on your mood.",
-    "size": 40,
-    "reviews": 45000,
-    "ratingAvg": 4.6,
-    "downloads": 5000000,
-    "ratings": [
-      { "name": "1 star", "count": 1000 },
-      { "name": "2 star", "count": 2000 },
-      { "name": "3 star", "count": 7000 },
-      { "name": "4 star", "count": 15000 },
-      { "name": "5 star", "count": 20000 }
-    ]
-  },
-  {
-    "id": 9,
-    "title": "NewsFlash",
-    "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=400&h=400&fit=crop",
-    "companyName": "Global Press",
-    "description": "Get real-time breaking news alerts from trusted sources worldwide with customizable news feeds.",
-    "size": 15,
-    "reviews": 6700,
-    "ratingAvg": 4.3,
-    "downloads": 300000,
-    "ratings": [
-      { "name": "1 star", "count": 200 },
-      { "name": "2 star", "count": 400 },
-      { "name": "3 star", "count": 1500 },
-      { "name": "4 star", "count": 2000 },
-      { "name": "5 star", "count": 2600 }
-    ]
-  },
-  {
-    "id": 10,
-    "title": "TravelMate",
-    "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=400&h=400&fit=crop",
-    "companyName": "Nomad Solutions",
-    "description": "Your all-in-one travel planner with offline maps, flight tracking, and hidden gem recommendations.",
-    "size": 88,
-    "reviews": 11200,
-    "ratingAvg": 4.4,
-    "downloads": 900000,
-    "ratings": [
-      { "name": "1 star", "count": 300 },
-      { "name": "2 star", "count": 700 },
-      { "name": "3 star", "count": 2500 },
-      { "name": "4 star", "count": 3200 },
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2500 },
       { "name": "5 star", "count": 4500 }
     ]
   },
   {
-    "id": 11,
-    "title": "SafeNotes",
-    "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=400&h=400&fit=crop",
-    "companyName": "PrivacyFirst",
-    "description": "Encrypted note-taking app with biometric lock to keep your ideas and passwords safe.",
-    "size": 12,
-    "reviews": 4300,
+    "id": 4,
+    "title": "ChefMate",
+    "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=400&h=400&fit=crop",
+    "companyName": "Global Kitchen",
+    "description": "Discover 50,000+ recipes with step-by-step video guides and an AI-powered meal planner based on your pantry.",
+    "size": 58,
+    "reviews": 32100,
+    "ratingAvg": 4.9,
+    "downloads": "8M",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 25000 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "MovieMind",
+    "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=400&h=400&fit=crop",
+    "companyName": "Cinephile Labs",
+    "description": "Personalized movie and TV show recommendations based on your watch history across all streaming platforms.",
+    "size": 32,
+    "reviews": 24500,
+    "ratingAvg": 4.6,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 13000 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "BudgetBuddy",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=400&h=400&fit=crop",
+    "companyName": "PennyWise Tech",
+    "description": "Take control of your finances with automated expense tracking, savings goals, and smart bill reminders.",
+    "size": 28,
+    "reviews": 21000,
+    "ratingAvg": 4.4,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 7200 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "LinguaLift",
+    "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=400&h=400&fit=crop",
+    "companyName": "Polyglot Labs",
+    "description": "Learn 40+ languages through interactive stories, native speaker audio, and speech recognition technology.",
+    "size": 95,
+    "reviews": 56000,
     "ratingAvg": 4.7,
-    "downloads": 200000,
+    "downloads": "15M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 13000 },
+      { "name": "5 star", "count": 35000 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "PixelEditor",
+    "image": "https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=400&h=400&fit=crop",
+    "companyName": "Creative Suite",
+    "description": "Professional-grade photo editing tools, unique filters, and layers to create stunning visual content on the go.",
+    "size": 150,
+    "reviews": 42000,
+    "ratingAvg": 4.8,
+    "downloads": "20M",
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 30000 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "CodeFlow",
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=400&h=400&fit=crop",
+    "companyName": "DevTools Studio",
+    "description": "A mobile IDE for web developers. Write, test, and deploy HTML, CSS, and JavaScript from anywhere.",
+    "size": 52,
+    "reviews": 6400,
+    "ratingAvg": 4.3,
+    "downloads": "500K",
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "GreenRide",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=400&h=400&fit=crop",
+    "companyName": "EcoTravel Co.",
+    "description": "The world's first eco-friendly carpooling and electric vehicle rental service for daily commuters.",
+    "size": 40,
+    "reviews": 12000,
+    "ratingAvg": 4.2,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "PlantParent",
+    "image": "https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?q=80&w=400&h=400&fit=crop",
+    "companyName": "Botany Hub",
+    "description": "Never kill a plant again! Identify species, set watering reminders, and get expert advice for your indoor garden.",
+    "size": 38,
+    "reviews": 18500,
+    "ratingAvg": 4.9,
+    "downloads": "4M",
     "ratings": [
       { "name": "1 star", "count": 50 },
       { "name": "2 star", "count": 150 },
-      { "name": "3 star", "count": 500 },
-      { "name": "4 star", "count": 1100 },
-      { "name": "5 star", "count": 2500 }
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 4300 },
+      { "name": "5 star", "count": 13000 }
     ]
   },
   {
     "id": 12,
-    "title": "StarGazer",
-    "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=400&h=400&fit=crop",
-    "companyName": "AstroLab",
-    "description": "Point your phone at the sky to identify planets, constellations, and satellites in real-time using AR.",
-    "size": 110,
-    "reviews": 9800,
-    "ratingAvg": 4.8,
-    "downloads": 600000,
+    "title": "UrbanBike",
+    "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=400&h=400&fit=crop",
+    "companyName": "City Wheels",
+    "description": "A smart cycling companion that tracks your routes, speed, and calories while providing safe bike-friendly paths.",
+    "size": 44,
+    "reviews": 15800,
+    "ratingAvg": 4.4,
+    "downloads": "1.5M",
     "ratings": [
-      { "name": "1 star", "count": 100 },
-      { "name": "2 star", "count": 200 },
-      { "name": "3 star", "count": 1000 },
-      { "name": "4 star", "count": 2500 },
-      { "name": "5 star", "count": 6000 }
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 7000 }
     ]
   },
   {
     "id": 13,
-    "title": "KitchenGenie",
-    "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=400&h=400&fit=crop",
-    "companyName": "TastyTech",
-    "description": "Smart recipe finder that suggests meals based on the ingredients you already have in your fridge.",
-    "size": 33,
-    "reviews": 7600,
-    "ratingAvg": 4.5,
-    "downloads": 450000,
+    "title": "NewsStream",
+    "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=400&h=400&fit=crop",
+    "companyName": "InforMation Global",
+    "description": "Unbiased daily news summaries from global sources. Customize your feed based on topics that matter to you.",
+    "size": 30,
+    "reviews": 27800,
+    "ratingAvg": 4.1,
+    "downloads": "10M",
     "ratings": [
-      { "name": "1 star", "count": 200 },
-      { "name": "2 star", "count": 400 },
-      { "name": "3 star", "count": 1200 },
-      { "name": "4 star", "count": 2000 },
-      { "name": "5 star", "count": 3800 }
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 4500 },
+      { "name": "4 star", "count": 8300 },
+      { "name": "5 star", "count": 10000 }
     ]
   },
   {
     "id": 14,
-    "title": "CloudStorage Pro",
-    "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=400&h=400&fit=crop",
-    "companyName": "SkyData",
-    "description": "Securely back up your photos, videos, and documents with seamless sync across all devices.",
-    "size": 25,
-    "reviews": 18900,
-    "ratingAvg": 4.1,
-    "downloads": 2000000,
+    "title": "SonicStream",
+    "image": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=400&h=400&fit=crop",
+    "companyName": "Aura Audio",
+    "description": "Hi-Fi music streaming with offline mode, curated playlists, and exclusive podcasts.",
+    "size": 65,
+    "reviews": 110000,
+    "ratingAvg": 4.6,
+    "downloads": "50M",
     "ratings": [
-      { "name": "1 star", "count": 1500 },
-      { "name": "2 star", "count": 2000 },
-      { "name": "3 star", "count": 4500 },
-      { "name": "4 star", "count": 4900 },
-      { "name": "5 star", "count": 6000 }
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 13000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 60000 }
     ]
   },
   {
     "id": 15,
-    "title": "LanguageLab",
-    "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=400&h=400&fit=crop",
-    "companyName": "Polyglot Systems",
-    "description": "Master a new language through conversation-based learning and daily bite-sized lessons.",
-    "size": 52,
-    "reviews": 32000,
-    "ratingAvg": 4.7,
-    "downloads": 4000000,
+    "title": "TaskMaster",
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=400&h=400&fit=crop",
+    "companyName": "Efficiency Lab",
+    "description": "Collaborative project management tool for teams. Kanban boards, Gantt charts, and integrated chat.",
+    "size": 48,
+    "reviews": 14200,
+    "ratingAvg": 4.4,
+    "downloads": "1M",
     "ratings": [
-      { "name": "1 star", "count": 500 },
-      { "name": "2 star", "count": 1500 },
-      { "name": "3 star", "count": 5000 },
-      { "name": "4 star", "count": 10000 },
-      { "name": "5 star", "count": 15000 }
-    ]
-  },
-  {
-    "id": 16,
-    "title": "HomeFix",
-    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6958?q=80&w=400&h=400&fit=crop",
-    "companyName": "ServiceNow",
-    "description": "Connect with top-rated local professionals for home repairs, plumbing, and electrical work.",
-    "size": 38,
-    "reviews": 2400,
-    "ratingAvg": 4.0,
-    "downloads": 150000,
-    "ratings": [
-      { "name": "1 star", "count": 200 },
-      { "name": "2 star", "count": 300 },
-      { "name": "3 star", "count": 600 },
-      { "name": "4 star", "count": 700 },
-      { "name": "5 star", "count": 600 }
-    ]
-  },
-  {
-    "id": 17,
-    "title": "AutoLog",
-    "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=400&h=400&fit=crop",
-    "companyName": "DriveTech",
-    "description": "Keep track of your vehicle's maintenance, fuel economy, and insurance papers in one place.",
-    "size": 19,
-    "reviews": 1500,
-    "ratingAvg": 4.2,
-    "downloads": 80000,
-    "ratings": [
-      { "name": "1 star", "count": 100 },
-      { "name": "2 star", "count": 150 },
-      { "name": "3 star", "count": 350 },
-      { "name": "4 star", "count": 400 },
-      { "name": "5 star", "count": 500 }
-    ]
-  },
-  {
-    "id": 18,
-    "title": "WeatherMap Live",
-    "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=400&h=400&fit=crop",
-    "companyName": "MeteoX",
-    "description": "Hyper-local weather forecasts with interactive radar maps and storm tracking technology.",
-    "size": 26,
-    "reviews": 14000,
-    "ratingAvg": 4.6,
-    "downloads": 1500000,
-    "ratings": [
-      { "name": "1 star", "count": 300 },
-      { "name": "2 star", "count": 700 },
-      { "name": "3 star", "count": 2000 },
-      { "name": "4 star", "count": 5000 },
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 4500 },
       { "name": "5 star", "count": 6000 }
     ]
   },
   {
-    "id": 19,
-    "title": "BudgetBoss",
-    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=400&h=400&fit=crop",
-    "companyName": "FinanceGo",
-    "description": "An intuitive expense tracker that helps you save money and manage your monthly budgets effortlessly.",
-    "size": 21,
-    "reviews": 8200,
-    "ratingAvg": 4.4,
-    "downloads": 400000,
+    "id": 16,
+    "title": "Wanderlust",
+    "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=400&h=400&fit=crop",
+    "companyName": "Global Nomads",
+    "description": "Plan your next adventure with crowdsourced travel guides, cheap flight alerts, and local meetups.",
+    "size": 74,
+    "reviews": 31500,
+    "ratingAvg": 4.7,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 18000 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "YogaFlow",
+    "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=400&h=400&fit=crop",
+    "companyName": "Balance Corp",
+    "description": "Daily yoga classes for all levels. Track your flexibility progress and join live group sessions.",
+    "size": 88,
+    "reviews": 22400,
+    "ratingAvg": 4.8,
+    "downloads": "4M",
     "ratings": [
       { "name": "1 star", "count": 200 },
-      { "name": "2 star", "count": 600 },
-      { "name": "3 star", "count": 1400 },
-      { "name": "4 star", "count": 2500 },
-      { "name": "5 star", "count": 3500 }
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 15000 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "NightSky AI",
+    "image": "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?q=80&w=400&h=400&fit=crop",
+    "companyName": "Space Tech",
+    "description": "AI-powered telescope companion for amateur astronomers. Captures and identifies deep space objects.",
+    "size": 110,
+    "reviews": 5100,
+    "ratingAvg": 4.3,
+    "downloads": "250K",
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 2000 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "PetLog",
+    "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=400&h=400&fit=crop",
+    "companyName": "Furry Friends",
+    "description": "Health tracker for your pets. Log vaccinations, diet, vet visits, and find pet-friendly locations nearby.",
+    "size": 32,
+    "reviews": 11200,
+    "ratingAvg": 4.6,
+    "downloads": "1M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 6000 }
     ]
   },
   {
     "id": 20,
-    "title": "GameQuest",
-    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=400&h=400&fit=crop",
-    "companyName": "Titan Games",
-    "description": "Join thousands of players in an epic open-world MMORPG with stunning graphics and quests.",
-    "size": 450,
-    "reviews": 150000,
-    "ratingAvg": 4.8,
-    "downloads": 10000000,
+    "title": "ScanDoc",
+    "image": "https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?q=80&w=400&h=400&fit=crop",
+    "companyName": "Office Tools Pro",
+    "description": "Turn your phone into a high-quality PDF scanner with OCR support to extract text from images.",
+    "size": 42,
+    "reviews": 85000,
+    "ratingAvg": 4.7,
+    "downloads": "25M",
     "ratings": [
-      { "name": "1 star", "count": 5000 },
-      { "name": "2 star", "count": 10000 },
-      { "name": "3 star", "count": 15000 },
-      { "name": "4 star", "count": 40000 },
-      { "name": "5 star", "count": 80000 }
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 21000 },
+      { "name": "5 star", "count": 50000 }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "AutoFix",
+    "image": "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=400&h=400&fit=crop",
+    "companyName": "CarCare Solutions",
+    "description": "Diagnose car problems through OBD2 integration and get maintenance tips and cost estimates.",
+    "size": 55,
+    "reviews": 9200,
+    "ratingAvg": 4.2,
+    "downloads": "800K",
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 3000 }
     ]
   }
 ]
