@@ -7,13 +7,9 @@ const MainLayout = () => {
     <div className="flex flex-col min-h-screen">
       
       <Header />
-
-      
       <main className="grow w-full max-w-7xl mx-auto px-4 md:px-12 py-8">
         <Outlet /> 
       </main>
-
-      
       <Footer />
     </div>
   );

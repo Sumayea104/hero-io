@@ -15,7 +15,7 @@ const AppCard = ({ app, isInstalledPage, onUninstall }) => {
       style: { borderRadius: '10px', background: '#333', color: '#fff', fontSize: '12px' },
     });
     
-    // Force a re-render or handle state globally if needed
+    
     window.dispatchEvent(new Event("storage")); 
   };
 

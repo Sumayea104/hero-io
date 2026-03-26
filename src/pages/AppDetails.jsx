@@ -11,7 +11,6 @@ const AppDetails = () => {
   const [loading, setLoading] = useState(true);
   const [isInstalled, setIsInstalled] = useState(false);
 
- 
   const chartData = [
     { name: "5 star", value: 10000 },
     { name: "4 star", value: 7000 },
@@ -20,20 +19,36 @@ const AppDetails = () => {
     { name: "1 star", value: 1000 },
   ];
 
-  useEffect(() => {
-    setLoading(true);
-    api.get("/apps.json").then((res) => {
-      const foundApp = res.data.find((a) => String(a.id) === String(id));
-      setApp(foundApp);
+  // useEffect(() => {
+  //   api.get("/apps.json").then((res) => {
+  //     const foundApp = res.data.find((a) => String(a.id) === String(id));
+  //     setApp(foundApp);
 
     
-      const savedApps = JSON.parse(localStorage.getItem("installed-apps")) || [];
-      const exists = savedApps.some((item) => String(item.id) === String(id));
-      setIsInstalled(exists);
+  //     const savedApps = JSON.parse(localStorage.getItem("installed-apps")) || [];
+  //     const exists = savedApps.some((item) => String(item.id) === String(id));
+  //     setIsInstalled(exists);
       
+  //     setLoading(false);
+  //   });
+  // }, [id]);
+
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const res = await api.get("/apps.json");
+      const foundApp = res.data.find((a) => String(a.id) === String(id));
+      setApp(foundApp);
+    }
+    catch(err) {
+      console.error(err);
+    } finally {
       setLoading(false);
-    });
-  }, [id]);
+    }
+  };
+  fetchData();
+},[id]);
+
 
   const handleInstall = () => {
     if (!app) return;
@@ -88,7 +103,6 @@ const AppDetails = () => {
               </div>
             </div>
 
-            {/* 🔥 বাটন কন্ডিশন */}
             <button 
               onClick={handleInstall}
               disabled={isInstalled}
@@ -106,7 +120,7 @@ const AppDetails = () => {
         {/* Ratings Chart */}
         <div className="py-12 border-b">
           <h2 className="text-lg font-black text-[#001931] mb-8 italic">Ratings</h2>
-          <div className="h-[250px] w-full max-w-2xl">
+          <div className="h-62.5 w-full max-w-2xl">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart layout="vertical" data={chartData} margin={{ left: 20 }}>
                 <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#f0f0f0" />
