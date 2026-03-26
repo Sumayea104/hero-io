@@ -19,20 +19,6 @@ const AppDetails = () => {
     { name: "1 star", value: 1000 },
   ];
 
-  // useEffect(() => {
-  //   api.get("/apps.json").then((res) => {
-  //     const foundApp = res.data.find((a) => String(a.id) === String(id));
-  //     setApp(foundApp);
-
-    
-  //     const savedApps = JSON.parse(localStorage.getItem("installed-apps")) || [];
-  //     const exists = savedApps.some((item) => String(item.id) === String(id));
-  //     setIsInstalled(exists);
-      
-  //     setLoading(false);
-  //   });
-  // }, [id]);
-
 useEffect(() => {
   const fetchData = async () => {
     try {
@@ -81,7 +67,7 @@ useEffect(() => {
         {/* Top Section: App Info */}
         <div className="flex flex-col md:flex-row gap-10 items-start border-b pb-12">
           <div className="w-64 h-64 bg-white border rounded-3xl p-6 shadow-sm flex items-center justify-center">
-             <img src={app.image} alt={app.title} className="w-full object-contain" />
+              <img src={app.image} alt={app.title} className="w-full object-contain" />
           </div>
 
           <div className="flex-1">
