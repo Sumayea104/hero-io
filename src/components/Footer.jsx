@@ -7,8 +7,6 @@ const Footer = () => {
     <footer className="bg-base-200 pt-20 pb-10 border-t border-base-300">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
-          
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-3">
               <img src={logo} alt="Hero.io" className="h-10 w-10" />

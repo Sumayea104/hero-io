@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import AppCard from "../components/AppCard";
 import hero from "../assets/hero.png"; 
 
-
 const Home = () => {
   const [apps, setApps] = useState([]);
 
@@ -15,102 +14,103 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="bg-white">
-      {/* 1. Banner Section */}
-<section className="py-20 text-center px-4 bg-white relative overflow-hidden">
-  <h1 className="text-5xl md:text-7xl font-black text-[#001931] leading-tight uppercase italic tracking-tighter">
-    We Build <br /> 
-    <span className="text-secondary">Productive</span> Apps
-  </h1>
-  <p className="mt-8 text-gray-500 max-w-2xl mx-auto text-sm md:text-base font-medium leading-relaxed">
-    At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. 
-    Our goal is to turn your ideas into digital experiences that truly make an impact on millions of users.
-  </p>
-  <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12 max-w-md mx-auto sm:max-w-none">
-    <a 
-      href="https://play.google.com/store" 
-      target="_blank" 
-      rel="noreferrer"
-      className="flex items-center justify-center gap-3 w-full sm:w-64 px-6 py-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 active:scale-95 group"
-    >
-      <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" 
-        alt="Google Play" 
-        className="w-7 h-7 object-contain"
-      />
-      <span className="text-xl md:text-2xl font-black text-[#001931]">Google Play</span>
-    </a>
-    <a 
-      href="https://www.apple.com/app-store/" 
-      target="_blank" 
-      rel="noreferrer"
-      className="flex items-center justify-center gap-3 w-full sm:w-64 px-6 py-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 active:scale-95 group"
-    >
-      <div className="w-7 h-7 bg-info rounded-lg flex items-center justify-center shadow-inner">
-          <img 
-            src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_Logo_2017.svg" 
-            alt="App Store" 
-            className="w-4 h-4 brightness-0 invert" 
-          />
-      </div>
-      <span className="text-xl md:text-2xl font-black text-[#001931]">App Store</span>
-    </a>
-  </div>
-  <div className="mt-20 flex justify-center">
-    <img 
-      src={hero} 
-      alt="Mobile App Preview" 
-      className="max-w-xs md:max-w-lg drop-shadow-[0_35px_35px_rgba(0,0,0,0.1)] animate-fade-up"
-    />
-  </div>
-</section>
-      <section className="bg-hero-linear2 py-16 text-white text-center">
-        <h2 className="text-2xl font-bold mb-10">Trusted By Millions, Built For You</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto px-6">
-          <div className="space-y-2">
-            <p className="text-xs uppercase opacity-80">Total Downloads</p>
-            <p className="text-4xl font-black">29.6M</p>
-            <p className="text-[10px] opacity-60">21% more than last month</p>
+    <div className="bg-white font-sans ">
+      
+      {/* --- 1. HERO SECTION --- */}
+      <section className="pt-20 md:pt-28 pb-0 text-center px-4 relative z-10 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-5xl md:text-8xl font-black text-[#001931] leading-[1.1] tracking-tighter uppercase italic">
+            We Build <br /> 
+            <span className="text-secondary">Productive</span> Apps
+          </h1>
+          
+          {/* Store Buttons */}
+          <div className="flex flex-wrap justify-center gap-3 mt-10 mb-16">
+            <a href="https://play.google.com" className="flex items-center gap-2 px-6 py-2 md:px-8 md:py-3 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all active:scale-95 group">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" className="h-5 md:h-6" alt="Play Store" />
+              <span className="text-lg md:text-xl font-bold text-[#001931]">Google Play</span>
+            </a>
+
+            <a href="https://www.apple.com/app-store/" className="flex items-center gap-3 px-6 py-2 md:px-8 md:py-3 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all active:scale-95 group">
+              <div className="bg-info p-1.5 rounded-lg flex items-center justify-center">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_Logo_2017.svg" 
+                  className="h-5 w-5 brightness-0 invert" 
+                  alt="App Store" 
+                />
+              </div>
+              <span className="text-lg md:text-xl font-bold text-[#001931]">App Store</span>
+            </a>
           </div>
-          <div className="space-y-2">
-            <p className="text-xs uppercase opacity-80">Total Reviews</p>
-            <p className="text-4xl font-black">906K</p>
-            <p className="text-[10px] opacity-60">65% more than last month</p>
-          </div>
-          <div className="space-y-2">
-            <p className="text-xs uppercase opacity-80">Active Apps</p>
-            <p className="text-4xl font-black">132+</p>
-            <p className="text-[10px] opacity-60">20 more will launch</p>
+
+          {/* --- SINGLE PHONE VIEW --- */}
+          <div className="flex justify-center relative overflow-visible px-4">
+            <img 
+              src={hero} 
+              alt="Mobile App Preview" 
+              className="w-full max-w-75 md:max-w-4xl drop-shadow-2xl relative z-20  object-contain" 
+            />
           </div>
         </div>
       </section>
 
-      {/* Trending Apps Section */}
-<section className="py-20 max-w-7xl mx-auto px-4 bg-[#F8F9FA]"> 
-  <div className="text-center mb-12">
-    <h2 className="text-4xl font-black text-[#001931]">Trending Apps</h2>
-    <p className="text-gray-500 text-sm mt-2 font-medium italic">
-      Explore All Trending Apps on the Market developed by us
-    </p>
-  </div>
+      {/* --- 2. STATS/REVIEW SECTION --- */}
+      
+      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-hero-linear2 pt-20 md:pt-20 pb-24 text-white text-center z-30 -mt-10 md:-mt-10 shadow-[0_-15px_40px_rgba(0,0,0,0.15)]">
+        <div className="w-full px-6">
+          <h2 className="text-xl md:text-3xl font-black mb-16 md:mb-24 tracking-[0.2em] uppercase italic opacity-80">
+            Trusted By Millions, Built For You
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 max-w-7xl mx-auto">
+            <div className="space-y-3">
+              <p className="text-xs uppercase font-bold tracking-widest opacity-60">Total Downloads</p>
+              <p className="text-6xl md:text-7xl font-black tracking-tighter">29.6M</p>
+              <p className="text-[10px] font-bold opacity-40 uppercase tracking-widest">21% MORE THAN LAST MONTH</p>
+            </div>
+            
+            <div className="space-y-3 border-y md:border-y-0 md:border-x border-white/10 py-12 md:py-0">
+              <p className="text-xs uppercase font-bold tracking-widest opacity-60">Total Reviews</p>
+              <p className="text-6xl md:text-7xl font-black tracking-tighter">906K</p>
+              <p className="text-[10px] font-bold opacity-40 uppercase tracking-widest">65% MORE THAN LAST MONTH</p>
+            </div>
+            
+            <div className="space-y-3">
+              <p className="text-xs uppercase font-bold tracking-widest opacity-60">Active Apps</p>
+              <p className="text-6xl md:text-7xl font-black tracking-tighter">132+</p>
+              <p className="text-[10px] font-bold opacity-40 uppercase tracking-widest">20 MORE WILL LAUNCH</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  {/* The 4-column Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-    {apps.map((app) => (
-      <AppCard key={app.id} app={app} />
-    ))}
-  </div>
+      {/* --- 3. TRENDING APPS SECTION --- */}
+      <section className="py-24 bg-[#F9FAFB] relative z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-black text-[#001931] tracking-tight uppercase italic">Trending Apps</h2>
+            <p className="text-gray-900 bold text-sm mt-3 font-medium uppercase tracking-widest opacity-70">
+              Explore All Trending Apps on the Market developed by us
+            </p>
+          </div>
 
-  {/* The Figma Gradient Button */}
-  <div className="flex justify-center">
-    <Link 
-    to="/apps" 
-    className="btn bg-hero-linear2 hover:opacity-90 text-white border-none px-12 rounded-lg font-black uppercase tracking-widest text-xs shadow-lg shadow-primary/20 transition-all"
-  >
-    Show All
-  </Link>
-  </div>
-</section>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {apps.map((app) => (
+              <AppCard key={app.id} app={app} />
+            ))}
+          </div>
+
+          <div className="flex justify-center mt-20">
+            <Link 
+              to="/apps" 
+              className="px-16 py-5 bg-hero-linear2 text-white rounded-2xl font-black uppercase tracking-widest text-xs shadow-2xl hover:scale-105 transition-all active:scale-95"
+            >
+              Show All
+            </Link>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };
