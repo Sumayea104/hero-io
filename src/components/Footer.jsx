@@ -13,7 +13,7 @@ const Footer = () => {
             <Link to="/" className="flex items-center gap-3">
               <img src={logo} alt="Hero.io" className="h-10 w-10" />
               <span className="text-3xl font-black italic tracking-tighter">
-                HERO<span className="text-primary">.IO</span>
+                ZENITH<span className="text-primary">APPS</span>
               </span>
             </Link>
             <p className="text-sm font-medium opacity-60 leading-relaxed max-w-xs">
@@ -55,13 +55,13 @@ const Footer = () => {
                 <div className="p-3 bg-primary/10 rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-all">
                   <FaEnvelope />
                 </div>
-                <span className="opacity-80">hello@hero.io</span>
+                <span className="opacity-80">hello@zenith.apps</span>
               </div>
               <div className="flex items-center gap-4 group">
                 <div className="p-3 bg-primary/10 rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-all">
                   <FaPhoneAlt />
                 </div>
-                <span className="opacity-80">+1 (555) 000-HERO</span>
+                <span className="opacity-80">+1 (555) 000-12323</span>
               </div>
             </div>
           </div>

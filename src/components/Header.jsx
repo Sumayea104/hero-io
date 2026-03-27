@@ -38,7 +38,7 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-3 group">
             <img src={logo} alt="Logo" className="h-8 w-8 md:h-10 md:w-10 object-contain" />
             <span className="text-lg md:text-2xl font-black italic tracking-tighter uppercase">
-              HERO<span className="text-primary">.IO</span>
+              ZENITH<span className="text-primary">APPS</span>
             </span>
           </Link>
         </div>
