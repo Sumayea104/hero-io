@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaStar, FaDownload } from "react-icons/fa";
-import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom"; 
+import Swal from 'sweetalert2'; 
 
 const AppCard = ({ app, isInstalledPage, onUninstall }) => {
   const [isInstalled, setIsInstalled] = useState(false);
@@ -13,28 +13,43 @@ const AppCard = ({ app, isInstalledPage, onUninstall }) => {
     setIsInstalled(savedApps.some((item) => String(item.id) === String(app.id)));
   }, [app.id]);
 
-  
   const handleNavigate = () => {
     navigate(`/app/${app.id}`);
   };
 
   const handleInstall = (e) => {
     e.stopPropagation(); 
+    
     const currentApps = JSON.parse(localStorage.getItem("installed-apps")) || [];
     
     if (currentApps.some((item) => String(item.id) === String(app.id))) {
-      toast.error("App is already installed!");
+      
+      Swal.fire({
+        title: 'Note!',
+        text: 'This app is already in your list.',
+        icon: 'info',
+        confirmButtonColor: '#001931'
+      });
       return;
     }
 
+    // Install logic
     const updatedApps = [...currentApps, app];
     localStorage.setItem("installed-apps", JSON.stringify(updatedApps));
     setIsInstalled(true);
 
-    toast.success(`${app.title} installed successfully!`, {
-      style: { borderRadius: '10px', background: '#333', color: '#fff', fontSize: '12px' },
+    //  SweetAlert2 Success Popup
+    Swal.fire({
+      title: 'Success!',
+      text: `${app.title} installed successfully! 🎉`,
+      icon: 'success',
+      timer: 1500,
+      showConfirmButton: false,
+      iconColor: '#00D391',
+      borderRadius: '15px'
     });
     
+    // Global event trigger
     window.dispatchEvent(new Event("storage")); 
   };
 
@@ -43,8 +58,8 @@ const AppCard = ({ app, isInstalledPage, onUninstall }) => {
       onClick={handleNavigate} 
       className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex flex-col h-full cursor-pointer hover:shadow-md transition-all group"
     >
-      {/* App Image */}
-      <div className="aspect-square bg-[#f9f9f9] rounded-lg mb-4 overflow-hidden border border-gray-50">
+      {/* App Image Container */}
+      <div className="aspect-square bg-[#f9f9f9] rounded-lg mb-4 overflow-hidden border border-gray-50 flex items-center justify-center">
         <img 
           src={app.image} 
           alt={app.title} 
@@ -52,12 +67,12 @@ const AppCard = ({ app, isInstalledPage, onUninstall }) => {
         />
       </div>
 
-      {/* Title */}
+      {/* App Title */}
       <h3 className="text-[14px] font-black text-[#001931] mb-3 line-clamp-1 group-hover:text-primary transition-colors">
         {app.title}
       </h3>
 
-      {/* Stats */}
+      {/* Downloads and Rating Stats */}
       <div className="flex justify-between items-center mb-4 text-[10px] font-bold">
         <div className="flex items-center gap-1 bg-[#F1FFF8] text-[#27AE60] px-2 py-1 rounded-md">
           <FaDownload className="text-[8px]" /> {app.downloads}
@@ -67,7 +82,7 @@ const AppCard = ({ app, isInstalledPage, onUninstall }) => {
         </div>
       </div>
 
-      {/* Actions */}
+      {/* Action Buttons */}
       <div className="mt-auto">
         {isInstalledPage ? (
           <button 
@@ -83,10 +98,10 @@ const AppCard = ({ app, isInstalledPage, onUninstall }) => {
           <button 
             onClick={handleInstall}
             disabled={isInstalled}
-            className={`w-full py-3 rounded-lg font-bold text-[12px] transition-all ${
+            className={`w-full py-3 rounded-lg font-bold text-[12px] transition-all shadow-sm ${
               isInstalled 
                 ? "bg-gray-100 text-gray-400 cursor-not-allowed" 
-                : "bg-[#00D391] text-white hover:bg-[#00b97e]"
+                : "bg-[#00D391] text-white hover:bg-[#00b97e] active:scale-95 shadow-[#00D391]/20"
             }`}
           >
             {isInstalled ? "✓ Installed" : `Install Now`}

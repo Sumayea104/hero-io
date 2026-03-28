@@ -6,7 +6,7 @@ const ErrorPage = () => {
       {/* 404 Illustration with Text */}
       <div className="max-w-md w-full mb-8">
         <img 
-          src="/404-illustration.png" // আপনার public ফোল্ডারে এই ছবিটি রাখুন
+          src="/404-illustration.png" 
           alt="404 Illustration" 
           className="w-full h-auto"
         />
