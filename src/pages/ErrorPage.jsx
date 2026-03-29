@@ -1,17 +1,19 @@
 import { Link } from "react-router-dom";
+import errorImg from "../assets/error-404.png";
 
 const ErrorPage = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center px-6">
       {/* 404 Illustration with Text */}
+      <div className="min-h-screen bg-white flex flex-col items-center justify-center px-6">
       <div className="max-w-md w-full mb-8">
         <img 
-          src="/404-illustration.png" 
+          src={errorImg} 
           alt="404 Illustration" 
           className="w-full h-auto"
         />
       </div>
-
+    </div>
       {/* Message Section */}
       <div className="text-center">
         <h2 className="text-2xl md:text-3xl font-black text-[#001931] mb-2">

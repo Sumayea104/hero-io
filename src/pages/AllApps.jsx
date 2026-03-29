@@ -29,10 +29,10 @@ const AllApps = () => {
 
   // 2. Robust Sorting Logic
   const sortedApps = [...filteredApps].sort((a, b) => {
-    // String content (like "1.2M") ke number-e convert korar utility
+    // String content (like "1.2M") ke number-e convert utility
     const getNum = (val) => {
       if (!val) return 0;
-      // Jodi "5M" ba "10k" thake, parseFloat shudhu number-ta nibe
+      // Jodi "5M" ba "10k" , parseFloat only number-ta 
       return parseFloat(String(val).replace(/[^0-9.]/g, '')) || 0;
     };
 
