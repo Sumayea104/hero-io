@@ -1,42 +1,55 @@
 import { useEffect, useState } from "react";
-import toast from "react-hot-toast";
 import { FaStar, FaDownload } from "react-icons/fa";
+import Swal from 'sweetalert2';
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // LocalStorage থেকে ডাটা লোড করা
     const data = JSON.parse(localStorage.getItem("installed-apps")) || [];
     setInstalledApps(data);
     
-    // লোডিং এনিমেশন ফিল দেওয়ার জন্য ছোট ডিলে
     const timer = setTimeout(() => setLoading(false), 500);
     return () => clearTimeout(timer);
   }, []);
 
-  const handleUninstall = (id) => {
-    // ১. ফিল্টার করে নতুন লিস্ট তৈরি
-    const updated = installedApps.filter(app => app.id !== id);
-    
-    // ২. স্টেট এবং স্টোরেজ আপডেট
-    setInstalledApps(updated);
-    localStorage.setItem("installed-apps", JSON.stringify(updated));
-    
-    // ৩. সাকসেস মেসেজ (ফিগমা অনুযায়ী এরর টোস্ট লাল রঙের হয় সাধারণত)
-    toast.error("Application Uninstalled", { 
-      icon: '🗑️',
-      duration: 2000 
+  const handleUninstall = (id, title) => {
+    // 🔥 Confirm before removing
+    Swal.fire({
+      title: 'Are you sure?',
+      text: `Do you want to uninstall ${title}?`,
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#EF4444',
+      cancelButtonColor: '#001931',
+      confirmButtonText: 'Yes, Uninstall!',
+      borderRadius: '15px'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // 1. Filter and update logic
+        const updated = installedApps.filter(app => app.id !== id);
+        setInstalledApps(updated);
+        localStorage.setItem("installed-apps", JSON.stringify(updated));
+
+        // 2. Success Alert
+        Swal.fire({
+          title: 'Uninstalled!',
+          text: 'Application removed successfully.',
+          icon: 'success',
+          timer: 1500,
+          showConfirmButton: false
+        });
+
+        // 3. Global event for Navbar/Stats update
+        window.dispatchEvent(new Event("storage"));
+      }
     });
-    
-    // অন্য পেজকে জানান দেওয়া যে স্টোরেজ চেঞ্জ হয়েছে
-    window.dispatchEvent(new Event("storage"));
   };
 
   if (loading) return (
     <div className="flex justify-center items-center min-h-[60vh]">
-      <span className="loading loading-spinner loading-lg text-secondary"></span>
+      <span className="loading loading-spinner loading-lg text-[#00D391]"></span>
     </div>
   );
 
@@ -58,13 +71,13 @@ const Installation = () => {
           <h2 className="text-sm font-black text-[#001931]">
             ({installedApps.length}) Apps Found
           </h2>
-          <select className="select select-bordered select-xs rounded font-bold text-[10px] focus:outline-none">
+          <select className="select select-bordered select-xs rounded font-bold text-[10px] focus:outline-none bg-white">
             <option value="size">Sort By Size</option>
             <option value="name">Sort By Name</option>
           </select>
         </div>
 
-        {/* List Layout - Figma Match */}
+        {/* List Layout */}
         <div className="flex flex-col gap-3">
           {installedApps.length > 0 ? (
             installedApps.map((app) => (
@@ -73,7 +86,6 @@ const Installation = () => {
                 className="bg-white p-3 rounded-xl border border-gray-100 flex items-center justify-between shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="flex items-center gap-4">
-                  {/* App Icon Box */}
                   <div className="w-14 h-14 bg-gray-50 rounded-xl overflow-hidden border border-gray-50 p-2">
                     <img 
                       src={app.image} 
@@ -82,7 +94,6 @@ const Installation = () => {
                     />
                   </div>
                   
-                  {/* App Info */}
                   <div>
                     <h3 className="text-[13px] font-black text-[#001931] mb-1">{app.title}</h3>
                     <div className="flex items-center gap-3 text-[10px] font-bold text-gray-400">
@@ -97,10 +108,9 @@ const Installation = () => {
                   </div>
                 </div>
 
-                {/* Action Button */}
                 <button 
-                  onClick={() => handleUninstall(app.id)}
-                  className="bg-[#00D391] hover:bg-red-500 text-white text-[10px] font-black uppercase px-5 py-2 rounded-lg transition-all duration-300 shadow-sm"
+                  onClick={() => handleUninstall(app.id, app.title)}
+                  className="bg-[#00D391] hover:bg-red-500 text-white text-[10px] font-black uppercase px-5 py-2 rounded-lg transition-all duration-300 shadow-sm active:scale-95"
                 >
                   Uninstall
                 </button>
