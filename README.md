@@ -16,7 +16,7 @@ Charts: Recharts (for dynamic ratings and data visualization)
 
 Notifications: SweetAlert2 (for robust, cross-device alerts)
 
-Deployment: Netlify / GitHub Pages
+Deployment: Vercel / GitHub Pages
 
 🌟 Key Features
 Dynamic App Discovery: Browse apps with real-time filtering and category-based navigation.
