@@ -1,4 +1,5 @@
 🚀 Zenith Apps
+
 Zenith Apps is a modern, sleek, and highly responsive mobile application marketplace interface. It allows users to browse various categories of apps, view detailed analytics via interactive charts, and "install" apps to their personal collection with persistent data storage.
 
 🛠️ Technologies Used
